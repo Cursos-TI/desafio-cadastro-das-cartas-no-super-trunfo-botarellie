@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
@@ -9,20 +10,20 @@
 int main() {
 
     // Declaração de variáveis Carta1
-    char estado1[10];            //Estado (UF)
+    char estado1[50];            //Estado (UF)
     char codCidade1[4];          //Código da cidade
     char numCodCidade1[4];       //Número código da cidade
-    char nomeCidade1[20];        //nome da cidade
+    char nomeCidade1[50];        //nome da cidade
     unsigned long int populacao1;//população de habitantes
     float area1;                 //área da cidade
     float pib1;                  //PIB da cidade
     int numPontosTuristicos1;    //número total de pontos turísticos
 
     // Declaração de variáveis Carta2
-    char estado2[10];            //Estado (UF)
+    char estado2[50];            //Estado (UF)
     char codCidade2[4];          //Código da cidade
     char numCodCidade2[4];       //Número código da cidade
-    char nomeCidade2[20];        //nome da cidade
+    char nomeCidade2[50];        //nome da cidade
     unsigned long int populacao2;//população de habitantes
     float area2;                 //área da cidade
     float pib2;                  //PIB da cidade
@@ -39,10 +40,10 @@ int main() {
     scanf(" %s", numCodCidade1);
 
     printf("\nDigite um Estado(UF): ");
-    scanf(" %9[^\n]", estado1);
+    scanf(" %49[^\n]", estado1);
      
     printf("\nDigite o nome da cidade: ");
-    scanf(" %19[^\n]", nomeCidade1);   
+    scanf(" %49[^\n]", nomeCidade1);   
 
     printf("\nDigite a população da cidade: ");
     scanf("%lu", &populacao1);  
@@ -66,10 +67,10 @@ int main() {
     scanf(" %s", numCodCidade2);
 
     printf("\nDigite uma Estado(UF): ");
-    scanf(" %9[^\n]", estado2);
+    scanf(" %49[^\n]", estado2);
 
     printf("\nDigite o nome da cidade: ");
-    scanf(" %19[^\n]", nomeCidade2);   
+    scanf(" %49[^\n]", nomeCidade2);   
 
     printf("\nDigite a população da cidade: ");
     scanf("%lu", &populacao2);  
@@ -85,7 +86,8 @@ int main() {
     
     // Exibição dos Dados das Cartas:
     //Carta1
-    strcat(codCidade1, numCodCidade1);                                                  // Agrupa os dados para formar o código da carta
+    //strcat(codCidade1, numCodCidade1);                                                  // Agrupa os dados para formar o código da carta
+    printf("\nAbaixo os dados inseridos para a carta: %s%s\n", codCidade1, numCodCidade1);
     printf("\nAbaixo os dados inseridos para a carta: %s\n", codCidade1);// Exibe o código concatenado
     printf("\nNome do Estado: %s", estado1);                                            // Exibe o nome do Estado    
     printf("\nNome da cidade: %s", nomeCidade1);                                        // Exibe o nome da cidade
@@ -96,7 +98,8 @@ int main() {
 
     //Carta2
     printf("\n---------------------------------------------------------\n");            // Separador
-    strcat(codCidade2, numCodCidade2);                                                  // Agrupa os dados para formar o código da carta
+    printf("\nAbaixo os dados inseridos para a carta: %s%s\n", codCidade2, numCodCidade2);
+    //strcat(codCidade2, numCodCidade2);                                                  // Agrupa os dados para formar o código da carta
     printf("\nAbaixo os dados inseridos para a carta: %s\n", codCidade2);// Exibe o código concatenado
     printf("\nNome do Estado: %s", estado2);                                            // Exibe o nome do Estado
     printf("\nNome da cidade: %s", nomeCidade2);                                        // Exibe o nome da cidade
