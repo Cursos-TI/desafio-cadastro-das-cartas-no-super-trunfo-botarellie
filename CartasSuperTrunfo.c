@@ -86,12 +86,10 @@ int main() {
     
     // Exibição dos Dados das Cartas:
     //Carta1
-    //strcat(codCidade1, numCodCidade1);                                                  // Agrupa os dados para formar o código da carta
     printf("\nAbaixo os dados inseridos para a carta: %s%s\n", codCidade1, numCodCidade1);
-    printf("\nAbaixo os dados inseridos para a carta: %s\n", codCidade1);// Exibe o código concatenado
     printf("\nNome do Estado: %s", estado1);                                            // Exibe o nome do Estado    
     printf("\nNome da cidade: %s", nomeCidade1);                                        // Exibe o nome da cidade
-    printf("\nPopulação da cidade: %lu", populacao1);                                    // Exibe a população da cidade
+    printf("\nPopulação da cidade: %lu", populacao1);                                   // Exibe a população da cidade
     printf("\nÁrea da cidade: %.2f", area1);                                            // Exibe a área da cidade
     printf("\nPIB da cidade: %.2f", pib1);                                              // Exibe o PIB da cidade
     printf("\nNúmero de pontos turísticos da cidade: %d\n", numPontosTuristicos1);      // Exibe o numero de pontos turísticos da cidade
@@ -99,8 +97,6 @@ int main() {
     //Carta2
     printf("\n---------------------------------------------------------\n");            // Separador
     printf("\nAbaixo os dados inseridos para a carta: %s%s\n", codCidade2, numCodCidade2);
-    //strcat(codCidade2, numCodCidade2);                                                  // Agrupa os dados para formar o código da carta
-    printf("\nAbaixo os dados inseridos para a carta: %s\n", codCidade2);// Exibe o código concatenado
     printf("\nNome do Estado: %s", estado2);                                            // Exibe o nome do Estado
     printf("\nNome da cidade: %s", nomeCidade2);                                        // Exibe o nome da cidade
     printf("\nPopulação da cidade: %lu", populacao2);                                    // Exibe a população da cidade
