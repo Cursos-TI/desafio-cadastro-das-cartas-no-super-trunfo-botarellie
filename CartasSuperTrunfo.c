@@ -111,7 +111,7 @@ int main() {
     printf("\nPIB da cidade: %.2f", pib1);                                              // Exibe o PIB da cidade
     printf("\nNúmero de pontos turísticos da cidade: %d", numPontosTuristicos1);      // Exibe o numero de pontos turísticos da cidade
     printf("\nDensidade Populacional: %.2f", densidadePopulacional1);       // Exibe a quantidade de habitantes por km²
-    printf("\nPIB per Capita: %.2f", pibPerCapta1, "reais\n");                            // Exibe o PIB per capta da cidade
+    printf("\nPIB per Capita: %.2f", pibPerCapta1, "reais\n");                            // Exibe o PIB per capita da cidade
 
     //Carta2
     printf("\n---------------------------------------------------------\n");            // Separador
@@ -123,7 +123,7 @@ int main() {
     printf("\nPIB da cidade: %.2f", pib2);                                              // Exibe o PIB da cidade
     printf("\nNúmero de pontos turísticos da cidade: %d", numPontosTuristicos2);      // Exibe o numero de pontos turísticos da 
     printf("\nDensidade Populacional: %.2f", densidadePopulacional2);       // Exibe a quantidade de habitantes por km²
-    printf("\nPIB per Capita: %.2f", pibPerCapta2, "reais\n");                            // Exibe o PIB per capta da cidadecidade
+    printf("\nPIB per Capita: %.2f", pibPerCapta2, "reais\n");                            // Exibe o PIB per capita da cidadecidade
 
     printf("\nFIM\n");
     
