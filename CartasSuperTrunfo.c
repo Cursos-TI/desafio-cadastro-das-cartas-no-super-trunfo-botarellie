@@ -20,6 +20,7 @@ int main() {
     int numPontosTuristicos1;    //número total de pontos turísticos
     float densidadePopulacional1;// Número de habitantes por km²
     float pibPerCapta1;           //Calcula PIB per capta da cidade
+    float superPoderCarta1;       //Soma de todos os valores numericos da carta
 
     // Declaração de variáveis Carta2
     char estado2[50];            //Estado (UF)
@@ -32,6 +33,7 @@ int main() {
     int numPontosTuristicos2;    //número total de pontos turísticos
     float densidadePopulacional2;// Número de habitantes por km² 
     float pibPerCapta2;           //Calcula PIB per capta da cidade
+    float superPoderCarta2;       //Soma de todos os valores numericos da carta
 
     // Cadastro das Cartas:
     //Carta1
@@ -124,6 +126,22 @@ int main() {
     printf("\nNúmero de pontos turísticos da cidade: %d", numPontosTuristicos2);      // Exibe o numero de pontos turísticos da 
     printf("\nDensidade Populacional: %.2f hab/km²", densidadePopulacional2);       // Exibe a quantidade de habitantes por km²
     printf("\nPIB per Capita: %.2f reais\n", pibPerCapta2);                            // Exibe o PIB per capita da cidadecidade
+
+
+
+    //Soma dos atributos numéricos para super poder
+    superPoderCarta1 = populacao1 + area1 + pib1 + numPontosTuristicos1 + pibPerCapta1;
+    printf("\nSuper poder CArta 1: %.2f", superPoderCarta1);
+
+    superPoderCarta2 = populacao2 + area2 + pib2 + numPontosTuristicos2 + pibPerCapta2;
+    printf("\nSuper poder CArta 2: %.2f", superPoderCarta2);
+    
+    
+    
+    printf("Comparação de Cartas:\n");
+
+
+
 
     printf("\nFIM\n");
     
