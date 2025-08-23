@@ -35,6 +35,15 @@ int main() {
     float pibPerCapta2;           //Calcula PIB per capta da cidade
     float superPoderCarta2;       //Soma de todos os valores numericos da carta
 
+    // Declaração de variáveis de resultado da comparação das cartas
+    int resultPopulacao;
+    int resultArea;
+    int resultPib;
+    int resultPontosTur;
+    int resultdensidadePop;
+    int resultPibPerCap;
+    int resultSuperPoder;
+
     // Cadastro das Cartas:
     //Carta1
     printf("Insira as informações para a primeira carta: \n");
@@ -71,6 +80,7 @@ int main() {
 
 
     //Carta2
+    printf("\n---------------------------------------------------------\n");            // Separador
     printf("\nInsira as informações para a segunda carta: \n");
 
     printf("\nDigite uma letra de 'A' a 'H' para o código da carta: ");
@@ -130,15 +140,32 @@ int main() {
 
 
     //Soma dos atributos numéricos para super poder
-    superPoderCarta1 = populacao1 + area1 + pib1 + numPontosTuristicos1 + pibPerCapta1;
-    printf("\nSuper poder CArta 1: %.2f", superPoderCarta1);
+    superPoderCarta1 = (float)populacao1 + area1 + pib1 + (float)numPontosTuristicos1 + pibPerCapta1;
+    // printf("\nSuper poder Carta 1: %.2f", superPoderCarta1);
 
-    superPoderCarta2 = populacao2 + area2 + pib2 + numPontosTuristicos2 + pibPerCapta2;
-    printf("\nSuper poder CArta 2: %.2f", superPoderCarta2);
+    superPoderCarta2 = (float)populacao2 + area2 + pib2 + (float)numPontosTuristicos2 + pibPerCapta2;
+    // printf("\nSuper poder Carta 2: %.2f", superPoderCarta2);
     
+    //Comparação das Cartas
+    resultPopulacao = populacao1 > populacao2;
+    resultArea = area1 > area2;
+    resultPib = pib1 > pib2;
+    resultPontosTur = numPontosTuristicos1 > numPontosTuristicos2;
+    resultdensidadePop = densidadePopulacional1 < densidadePopulacional2;
+    resultPibPerCap = pibPerCapta1 > pibPerCapta2;
+    resultSuperPoder = superPoderCarta1 > superPoderCarta2;
     
-    
-    printf("Comparação de Cartas:\n");
+    //Resultado comparação das cartas
+    printf("\n---------------------------------------------------------\n");            // Separador
+    printf("\nAbaixo resultado da comparação das cartas");
+    printf("\nPopulação: %d", resultPopulacao);
+    printf("\nArea: %d", resultArea);
+    printf("\nPib: %d", resultPib);
+    printf("\nPontos Turísticos: %d", resultPontosTur);
+    printf("\nDensidade Populacional: %d", resultdensidadePop);
+    printf("\nPibPerCapita: %d", resultPibPerCap);
+    printf("\nSuper Poder: %d", resultSuperPoder);
+
 
 
 
