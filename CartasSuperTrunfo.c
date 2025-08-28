@@ -21,7 +21,6 @@ int main() {
     float densidadePopulacional1;// Número de habitantes por km²
     float pibPerCapta1;           //Calcula PIB per capta da cidade
     float superPoderCarta1;       //Soma de todos os valores numericos da carta
-    char codCarta1[4];            //Código da carta concatenado
 
     // Declaração de variáveis Carta2
     char estado2[50];            //Estado (UF)
@@ -35,7 +34,6 @@ int main() {
     float densidadePopulacional2;// Número de habitantes por km² 
     float pibPerCapta2;           //Calcula PIB per capta da cidade
     float superPoderCarta2;       //Soma de todos os valores numericos da carta
-    char codCarta2[4];            //Código da carta concatenado
 
     // Declaração de variáveis de resultado da comparação das cartas
     int resultPopulacao;
@@ -144,47 +142,28 @@ int main() {
     // printf("\nSuper poder Carta 1: %.2f", superPoderCarta1);
 
     superPoderCarta2 = (float)populacao2 + area2 + pib2 + (float)numPontosTuristicos2 + pibPerCapta2;
-    // printf("\nSuper poder Carta 2: %.2f", superPoderCarta2);
+    printf("\nSuper poder Carta 2: %.2f", superPoderCarta2);
     
-    // //Comparação das Cartas
-    // resultPopulacao = populacao1 > populacao2;
-    // resultArea = area1 > area2;
-    // resultPib = pib1 > pib2;
-    // resultPontosTur = numPontosTuristicos1 > numPontosTuristicos2;
-    // resultdensidadePop = densidadePopulacional1 < densidadePopulacional2;
-    // resultPibPerCap = pibPerCapta1 > pibPerCapta2;
-    // resultSuperPoder = superPoderCarta1 > superPoderCarta2;
+    //Comparação das Cartas
+    resultPopulacao = populacao1 > populacao2;
+    resultArea = area1 > area2;
+    resultPib = pib1 > pib2;
+    resultPontosTur = numPontosTuristicos1 > numPontosTuristicos2;
+    resultdensidadePop = densidadePopulacional1 < densidadePopulacional2;
+    resultPibPerCap = pibPerCapta1 > pibPerCapta2;
+    resultSuperPoder = superPoderCarta1 > superPoderCarta2;
     
-    // //Resultado comparação das cartas
-    // printf("\n---------------------------------------------------------\n");            // Separador
-    // printf("\nAbaixo resultado da comparação das cartas");
-    // printf("\nPopulação: %d", resultPopulacao);
-    // printf("\nArea: %d", resultArea);
-    // printf("\nPib: %d", resultPib);
-    // printf("\nPontos Turísticos: %d", resultPontosTur);
-    // printf("\nDensidade Populacional: %d", resultdensidadePop);
-    // printf("\nPibPerCapita: %d", resultPibPerCap);
-    // printf("\nSuper Poder: %d", resultSuperPoder);
-
     //Resultado comparação das cartas
-    printf("\n---------------------------------------------------------\n");
-    printf("Comparação das cartas (Atributo Super poder)\n");
+    printf("\n---------------------------------------------------------\n");            // Separador
+    printf("\nAbaixo resultado da comparação das cartas");
+    printf("\nPopulação: %d", resultPopulacao);
+    printf("\nArea: %d", resultArea);
+    printf("\nPib: %d", resultPib);
+    printf("\nPontos Turísticos: %d", resultPontosTur);
+    printf("\nDensidade Populacional: %d", resultdensidadePop);
+    printf("\nPibPerCapita: %d", resultPibPerCap);
+    printf("\nSuper Poder: %d", resultSuperPoder);
 
-    //Compara o atributo e exibe o vencedor
-    if (superPoderCarta1 > superPoderCarta2)
-    {
-        printf("\nCarta %s%s: %s - %s %.2f", codCidade1,numCodCidade1,nomeCidade1,estado1,superPoderCarta1);
-        printf("\nCarta %s%s: %s - %s %.2f", codCidade2,numCodCidade2,nomeCidade2,estado2,superPoderCarta2);
-        printf("\n---------------------------------------------------------");
-        printf("\nResultado: Carta %s%s %s - %s venceu!", codCidade1,numCodCidade1,nomeCidade1,estado1);
-    }
-    else{
-        printf("\nCarta %s%s: %s - %s %.2f", codCidade1,numCodCidade1,nomeCidade1,estado1,superPoderCarta1);
-        printf("\nCarta %s%s: %s - %s %.2f", codCidade2,numCodCidade2,nomeCidade2,estado2,superPoderCarta2);
-        printf("\n---------------------------------------------------------");
-        printf("\nResultado: Carta %s%s %s - %s venceu!",codCidade2,numCodCidade2,nomeCidade2,estado2);
-        };
-    
 
     printf("\nFIM\n");
     
